@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Daniel Schleindlsperger",
-    "label": "Programmer",
+    "label": "Software-Entwickler",
     "picture": "",
     "email": "daniel@schleindlsperger.de",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
+    "phone": null,
+    "website": "https://daniel.schleindlsperger.de",
     "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
       "address": "2712 Broadway St",
@@ -16,24 +16,49 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "network": "Github",
+        "username": "danielschleindlsperger",
+        "url": "https://github.com/danielschleindlsperger"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Xing",
+        "url": "https://www.xing.com/profile/Daniel_Schleindlsperger"
       }
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
+      "company": "Süddeutsche Zeitung Digitale Medien",
+      "position": "Software-Entwickler",
+      "website": "https://sz.de",
+      "startDate": "2018-07-01",
+      "endDate": "jetzt",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": [
+        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+        "Successfully won Techcrunch Disrupt",
+        "Optimized an algorithm that holds the current world record for Weisman Scores"
+      ]
+    },
+    {
+      "company": "myposter",
+      "position": "Software-Entwickler",
+      "website": "https://myposter.de",
+      "startDate": "2018-01-01",
+      "endDate": "2018-06-31",
+      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "highlights": [
+        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+        "Successfully won Techcrunch Disrupt",
+        "Optimized an algorithm that holds the current world record for Weisman Scores"
+      ]
+    },
+    {
+      "company": "coma",
+      "position": "Praktikant und Werkstudent Webentwicklung",
+      "website": "https://coma.de",
+      "startDate": "2016-03",
+      "endDate": "2017-10",
       "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
       "highlights": [
         "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
@@ -41,49 +66,32 @@
         "Optimized an algorithm that holds the current world record for Weisman Scores"
       ]
     }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
+
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
+      "institution": "Technische Hochschule Deggendorf",
+      "area": "Entwicklung einer Webapplikation zur regulierten Softwarewartung von Agenturprojekten",
+      "studyType": "Bachelorarbeit",
+      "startDate": "2017-04",
+      "endDate": "2017-10"
+    },
+    {
+      "institution": "Technische Hochschule Deggendorf",
+      "area": "Medientechnik mit Schwerpunkt Medieninformatik",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
+      "startDate": "2013-10",
+      "endDate": "2017-11",
+        "courses": [
+            "TODO:"
+        ]
+    },
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "institution": "Gymnasium Pfarrkirchen",
+      "area": null,
+      "studyType": "Allgemeine Hochschulereife",
+      "startDate": "2004",
+      "endDate": "2012"
     }
   ],
   "skills": [
@@ -108,23 +116,13 @@
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    },
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+        "language": "Englisch",
+        "fluency": "Sehr gut"
+
     }
   ]
 }
