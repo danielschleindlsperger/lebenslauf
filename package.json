@@ -1,0 +1,28 @@
+{
+  "name": "lebenslauf",
+  "version": "1.0.0",
+  "description": "CV of this guy",
+  "main": "index.js",
+  "scripts": {
+    "resume": "resume",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielschleindlsperger/lebenslauf.git"
+  },
+  "keywords": [
+    "lebenslauf",
+    "cv",
+    "curriculum vitae"
+  ],
+  "author": "Daniel Schleindlsperger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielschleindlsperger/lebenslauf/issues"
+  },
+  "homepage": "https://github.com/danielschleindlsperger/lebenslauf#readme",
+  "devDependencies": {
+    "resume-cli": "^1.2.7"
+  }
+}
