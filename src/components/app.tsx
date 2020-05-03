@@ -14,20 +14,15 @@ export const App = () => {
       <Page>
         <Basics />
 
-        <Section title="Kurzprofil">
-          <p>{resume.basics.summary}</p>
-        </Section>
-
         <Section title="Berufliche Erfahrung">
           <ul>
             {resume.work.map((w) => (
-              <li key={w.company}>
-                <SubHeading title={w.company} url={w.website} overline={w.position} />
-                <ul className="ml-8 mt-4 list-disc">
-                  {w.highlights.map((h) => (
-                    <li key={h}>{h}</li>
-                  ))}
-                </ul>
+              <li className="mt-6" key={w.company}>
+                <div className="flex items-baseline justify-between">
+                  <SubHeading title={w.company} url={w.website} overline={w.position} />
+                  <Timestamp startDate={w.startDate} endDate={w.endDate} />
+                </div>
+                <BulletList className="mt-4" entries={w.highlights} />
               </li>
             ))}
           </ul>
@@ -44,33 +39,63 @@ export const App = () => {
                     </p>
                     <p className="text-gray-700 font-semibold">{edu.institution}</p>
                   </div>
-                  <div className="ml-4 text-gray-700 font-semibold">
-                    <time>{edu.startDate}</time> - <time>{edu.endDate}</time>
-                  </div>
+                  <Timestamp className="ml-4" startDate={edu.startDate} endDate={edu.endDate} />
                 </div>
               </li>
             ))}
           </ul>
         </Section>
       </Page>
+
       <Page>
         <Section title="Projekte">
           <ul>
             {resume.projects.map((proj) => (
-              <li key={proj.name}>
-                <SubHeading title={proj.name} url={proj.url} overline="TODO: Arbeitgeber" />
+              <li className="mt-6" key={proj.name}>
+                <SubHeading title={proj.name} url={proj.url} overline={proj.company} />
                 <p className="mt-3">{proj.description}</p>
-
-                <h4 className="mt-3 font-semibold">Technologien</h4>
-                <Taglist tags={proj.keywords} className="mt-2" />
+                <Taglist className="mt-3" tags={proj.keywords} />
               </li>
             ))}
           </ul>
         </Section>
 
-        <Section title="Besondere Fähigkeiten" />
+        <Section title="Besondere Fähigkeiten">
+          <ul>
+            {resume.skills.map((skill) => (
+              <li className="mt-2" key={skill.name}>
+                <h3 className="text-lg font-bold">{skill.name}</h3>
+                <BulletList className="mt-2" entries={skill.keywords} />
+              </li>
+            ))}
+          </ul>
+        </Section>
       </Page>
     </>
+  )
+}
+
+type TimestampProps = {
+  startDate: string
+  endDate: string
+  className?: string
+}
+const Timestamp = ({ startDate, endDate, className }: TimestampProps) => {
+  return (
+    <div className={cx(className, 'font-semibold text-gray-700')}>
+      <time dateTime={startDate}>{startDate}</time> - <time dateTime={endDate}>{endDate}</time>
+    </div>
+  )
+}
+
+const BulletList = ({ entries, className }: { entries: string[]; className?: string }) => {
+  if (entries.length === 0) return null
+  return (
+    <ul className={cx(className, 'list-disc ml-8')}>
+      {entries.map((entry) => (
+        <li key={entry}>{entry}</li>
+      ))}
+    </ul>
   )
 }
 

@@ -1,25 +1,23 @@
 import puppeteer from 'puppeteer'
+import * as fs from 'fs'
 import * as path from 'path'
 
-const SUPPORTED_FILE_FORMATS = ['html', 'pdf'] as const
+const OUTPUT_DIR = path.resolve(__dirname, '../out')
+const OUTPUT = path.resolve(OUTPUT_DIR, 'lebenslauf-daniel-schleindlsperger.pdf')
+
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR)
+}
 
 export async function main() {
-  const puppeteerLaunchArgs = []
-
-  if (process.env.RESUME_PUPPETEER_NO_SANDBOX) {
-    puppeteerLaunchArgs.push('--no-sandbox')
-  }
-
-  const browser = await puppeteer.launch({
-    args: puppeteerLaunchArgs,
-  })
+  const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
   await page.goto('http://localhost:1234', {
     waitUntil: 'networkidle0',
   })
   await page.pdf({
-    path: './lebenslauf.pdf',
+    path: OUTPUT,
     format: 'A4',
     printBackground: true,
   })
