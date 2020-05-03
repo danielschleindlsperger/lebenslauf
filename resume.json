@@ -1,128 +1,78 @@
 {
+  "selectedTemplate": 1,
+  "headings": {
+    "skills": "Besondere Fähigkeiten",
+    "awards": "",
+    "education": "Ausbildung",
+    "work": "Berufliche Erfahrung",
+    "projects": "Projekte"
+  },
   "basics": {
     "name": "Daniel Schleindlsperger",
-    "label": "Software-Entwickler",
-    "picture": "",
+    "address": "Max-Anderl-Str. 69, 85375 Neufahrn b. Freising",
+    "birthday": "1993-08-23",
     "email": "daniel@schleindlsperger.de",
-    "phone": null,
+    "phone": "+49 152 56 11 57 86",
     "website": "https://daniel.schleindlsperger.de",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Github",
-        "username": "danielschleindlsperger",
-        "url": "https://github.com/danielschleindlsperger"
-      },
-      {
-        "network": "Xing",
-        "url": "https://www.xing.com/profile/Daniel_Schleindlsperger"
-      }
-    ]
+    "summary": "Als Software-Entwickler mit mehr als zwei Jahren Erfahrung im Konzipieren und Umsetzen von millionenfach besuchten und performance-kritischen Webseiten in agilen Teams bin ich auf der Suche nach eine XXX Umgebung, in der der Nutzer stets im Fokus steht."
   },
-  "work": [
+  "profiles": [
     {
-      "company": "Süddeutsche Zeitung Digitale Medien",
-      "position": "Software-Entwickler",
-      "website": "https://sz.de",
-      "startDate": "2018-07-01",
-      "endDate": "jetzt",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
+      "name": "Github",
+      "url": "https://github.com/danielschleindlsperger"
     },
     {
-      "company": "myposter",
-      "position": "Software-Entwickler",
-      "website": "https://myposter.de",
-      "startDate": "2018-01-01",
-      "endDate": "2018-06-31",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    },
-    {
-      "company": "coma",
-      "position": "Praktikant und Werkstudent Webentwicklung",
-      "website": "https://coma.de",
-      "startDate": "2016-03",
-      "endDate": "2017-10",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
+      "name": "Github",
+      "url": "https://github.com/danielschleindlsperger"
     }
-
   ],
   "education": [
     {
       "institution": "Technische Hochschule Deggendorf",
-      "area": "Entwicklung einer Webapplikation zur regulierten Softwarewartung von Agenturprojekten",
-      "studyType": "Bachelorarbeit",
-      "startDate": "2017-04",
-      "endDate": "2017-10"
-    },
+      "location": "Deggendorf",
+      "studyType": "BE",
+      "endDate": "2017",
+      "startDate": "2013",
+      "area": "Medientechnik mit Schwerpunkt Medieninformatik"
+    }
+  ],
+  "work": [
     {
-      "institution": "Technische Hochschule Deggendorf",
-      "area": "Medientechnik mit Schwerpunkt Medieninformatik",
-      "studyType": "Bachelor",
-      "startDate": "2013-10",
-      "endDate": "2017-11",
-        "courses": [
-            "TODO:"
-        ]
-    },
-    {
-      "institution": "Gymnasium Pfarrkirchen",
-      "area": null,
-      "studyType": "Allgemeine Hochschulereife",
-      "startDate": "2004",
-      "endDate": "2012"
+      "website": "https://sz.de",
+      "highlights": [
+        "Mitverantwortung für die Seite SZ.de mit mehr als fünf Millionen Visits pro Tag",
+        "Steigerung der Performance des wichtigsten Templates von SZ.de (Artikel) um mehr als 250% bei Relaunch als serverless React Applikation",
+        "Verbesserte Integration der verteilten Kubernetes Microservices-Architektur in die lokale Entwicklungsumgebung durch internes CLI-Tool",
+        "Verbesserung der Seiten-Performance und Verringerung des Wartungsaufwands von Frontend-Build-Konfigurationen durch generische Build-Library auf Basis von webpack",
+        "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
+      ],
+      "company": "Süddeutsche Zeitung Digitale Medien",
+      "position": "Software-Entwickler",
+      "startDate": "Juli 2018",
+      "endDate": "heute"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "level": "",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
+        "Testing",
+        "UIs mit React und Vue.js",
+        "Serverless Technologien (AWS)",
+        "Laravel und PHP",
+        "Funktionales Programmieren in TypeScript, Scala und Clojure"
+      ],
+      "name": "Technologien"
     }
   ],
-  "languages": [
+  "projects": [
     {
-      "language": "Deutsch",
-      "fluency": "Muttersprache"
-    },
-    {
-        "language": "Englisch",
-        "fluency": "Sehr gut"
-
+      "name": " Autorenseiten",
+      "keywords": ["React", "AWS Lambda", "AWS Cloudformation", "AWS DynamoDB"],
+      "description": "Entstanden aus meiner Idee und prototypischen Umsetzung bei einem firmen-internen Hackathon setzt das Team eine eigenständige Seite als Spotlight für die Autoren der Süddeutschen Zeitung um.  Für den eigenständigen Microservice gilt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als SSR-Applikation mit React gelingt eine Platzierung der meisten Autoren in den Top-Ergebnissen der Suchmaschinen sowie eine gute Nutzererfahrung durch schnelles Laden.  Für die Übersichtsseite aller Autoren wird eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant dargestellt. Das Resultat zahlt ebenfalls auf eine erhöhte Auffindbarkeit bei Suchmaschinen und eine bessere UX ein.",
+      "url": "https://sz.de/autoren"
     }
-  ]
+  ],
+  "awards": [],
+  "sections": ["templates", "profile", "education", "work", "skills", "projects", "awards"]
 }
