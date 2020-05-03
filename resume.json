@@ -38,7 +38,7 @@
   ],
   "work": [
     {
-      "website": "https://sz.de",
+      "website": "https://www.sz.de",
       "highlights": [
         "Mitverantwortung für die Seite SZ.de mit mehr als fünf Millionen Visits pro Tag",
         "Steigerung der Performance des wichtigsten Templates von SZ.de (Artikel) um mehr als 250% bei Relaunch als serverless React Applikation",
@@ -50,6 +50,27 @@
       "position": "Software-Entwickler",
       "startDate": "Juli 2018",
       "endDate": "heute"
+    },
+    {
+      "highlights": [
+        "Umsetzung einer Upselling-Lösung im Checkout",
+        "Abschätzen der Parität von Browser-basiertem-Canvas- und server-seitigem PDF-Rendering durch Erstellen eines Prototyps in Vue.js und Laravel",
+        "Anschließende Umsetzung einer Canvas-bassierten Web-Applikation zur Erstellugn von Fotobüchern in Vue.js",
+        "Reduzierung der Komplexität eines jQuery-Monolithen durch schrittweises Refactoring"
+      ],
+      "company": "myposter",
+      "position": "Webentwickler",
+      "startDate": "01-2018",
+      "endDate": "06-2018"
+    },
+    {
+      "highlights": [
+        ""
+      ],
+      "position": "Praktikant und Werkstudent Webenwicklung",
+      "company": "coma AG",
+      "startDate": "05-2016",
+      "endDate": "2017-10"
     }
   ],
   "skills": [
@@ -63,16 +84,55 @@
         "Funktionales Programmieren in TypeScript, Scala und Clojure"
       ],
       "name": "Technologien"
+    },
+    {
+      "keywords": [
+        "Verständnis für alle Bereiche des Applikations-Stacks",
+        "Scharfblick und schnelle Auffassungsgabe",
+        "Hoher Wissensdurst"
+      ],
+      "name": "Grundsätzliches"
     }
   ],
   "projects": [
     {
       "name": " Autorenseiten",
-      "keywords": ["React", "AWS Lambda", "AWS Cloudformation", "AWS DynamoDB"],
+      "keywords": [
+        "React",
+        "AWS Lambda",
+        "AWS Cloudformation",
+        "AWS DynamoDB",
+        null
+      ],
       "description": "Entstanden aus meiner Idee und prototypischen Umsetzung bei einem firmen-internen Hackathon setzt das Team eine eigenständige Seite als Spotlight für die Autoren der Süddeutschen Zeitung um.  Für den eigenständigen Microservice gilt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als SSR-Applikation mit React gelingt eine Platzierung der meisten Autoren in den Top-Ergebnissen der Suchmaschinen sowie eine gute Nutzererfahrung durch schnelles Laden.  Für die Übersichtsseite aller Autoren wird eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant dargestellt. Das Resultat zahlt ebenfalls auf eine erhöhte Auffindbarkeit bei Suchmaschinen und eine bessere UX ein.",
       "url": "https://sz.de/autoren"
+    },
+    {
+      "keywords": [
+        "React ",
+        "AWS Cloudformation",
+        "AWS S3",
+        "AWS Cognito"
+      ],
+      "name": "Münchner Fenster Admin",
+      "description": "Die interne Applikation erlaubt es Redakteuren Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen zu pflegen. Der auf Cloudfront, S3 und Cognito basierende Stack ohne eigenem Code im Backend erlaubt es die Anwendung über Jahre hinweg sicher und kostengünstig ohne viel Wartungsaufwand zu betreiben."
     }
   ],
-  "awards": [],
-  "sections": ["templates", "profile", "education", "work", "skills", "projects", "awards"]
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
 }

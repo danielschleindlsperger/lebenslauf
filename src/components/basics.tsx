@@ -2,30 +2,46 @@ import * as React from 'react'
 import cx from 'classnames'
 import { useResume } from '../resume'
 import { typo } from './typo'
+import { formatUrl } from '../util'
 
 export const Basics = () => {
   const resume = useResume()
 
   return (
-    <div>
+    <div className="relative">
+      <BackDrop />
       <h1 className={typo.h1}>{resume.basics.name}</h1>
       <h2 className={cx('text-xl text-gray-700 font-bold')}>Softwareentwickler</h2>
-      <div className="mt-6 grid grid-cols-2">
-        <div className="font-semibold">Adresse</div>
-        <div>{resume.basics.address}</div>
+      <address className="mt-6 grid grid-cols-8 not-italic">
+        <RowTitle>Adresse</RowTitle>
+        <div className="col-span-5">{resume.basics.address}</div>
 
-        <div className="font-semibold">Geburtstag</div>
-        <div>{resume.basics.birthday}</div>
+        <RowTitle>Geburtstag</RowTitle>
+        <div className="col-span-5">{resume.basics.birthday}</div>
 
-        <div className="font-semibold">Telefon</div>
-        <div>{resume.basics.phone}</div>
+        <RowTitle>Telefon</RowTitle>
+        <a className="col-span-5" href={'tel:' + resume.basics.phone}>
+          {resume.basics.phone}
+        </a>
 
-        <div className="font-semibold">Email</div>
-        <div>{resume.basics.email}</div>
+        <RowTitle>Email</RowTitle>
+        <a className="col-span-5" href={'mailto:' + resume.basics.email}>
+          {resume.basics.email}
+        </a>
 
-        <div className="font-semibold">Website</div>
-        <div>{resume.basics.website}</div>
-      </div>
+        <RowTitle>Website</RowTitle>
+        <a className="col-span-5" href={resume.basics.website}>
+          {formatUrl(resume.basics.website)}
+        </a>
+      </address>
     </div>
   )
+}
+
+const BackDrop = () => {
+  return null
+  return <div className="bg-green-200 w-screen h-full fixed" />
+}
+const RowTitle = ({ children }: { children?: React.ReactNode }) => {
+  return <div className="font-semibold col-span-3">{children}</div>
 }

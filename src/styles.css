@@ -4,9 +4,11 @@
 
 @tailwind utilities;
 
-html {
+html, body {
     /* https://github.com/puppeteer/puppeteer/issues/2685 */
     -webkit-print-color-adjust: exact;
+
+    font-size: 16px;
 }
 
 .page {
@@ -18,6 +20,9 @@ html {
 }
 
 @media not print {
+    html, body {
+        font-size: 12pt;
+    }
     .page {
         border: 1px solid black;
         margin: 100px auto 0 auto;
