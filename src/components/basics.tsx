@@ -16,7 +16,7 @@ export const Basics = () => {
           <h1 className={typo.h1}>{resume.basics.name}</h1>
           <h2 className={cx('text-xl text-gray-700 font-bold')}>Softwareentwickler</h2>
 
-          <address className="mt-6 mr-6 grid grid-cols-7 not-italic">
+          <address className="mt-6 mr-6 grid grid-cols-8 not-italic">
             <RowTitle>Adresse</RowTitle>
             <div className="col-span-5">{resume.basics.address}</div>
 
@@ -41,7 +41,7 @@ export const Basics = () => {
             <Profiles />
           </address>
         </div>
-        <Avatar className="w-64" />
+        <Avatar className="w-56" />
       </div>
     </div>
   )
