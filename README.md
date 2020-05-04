@@ -1,8 +1,10 @@
 # Lebenslauf (CV)
 
+React based CV, styled with tailwind.
+
 ## Requirements
 
-- Node.js with npm
+- Node >= 12 with npm
 
 
 ## Getting Started
@@ -12,5 +14,8 @@
 npm ci
 
 # Serve a preview in the browser
-npm run resume serve
+npm start
+
+# Export as PDF
+npm run export
 ```

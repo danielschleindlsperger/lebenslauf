@@ -9,7 +9,7 @@
   "basics": {
     "name": "Daniel Schleindlsperger",
     "address": "Max-Anderl-Str. 69, 85375 Neufahrn",
-    "birthday": "1993-08-23",
+    "birthday": "23.08.1993",
     "email": "daniel@schleindlsperger.de",
     "phone": "+49 152 56 11 57 86",
     "website": "https://daniel.schleindlsperger.de",
@@ -46,7 +46,7 @@
         "Verbesserte Integration der verteilten Kubernetes Microservices-Architektur in die lokale Entwicklungsumgebung durch internes CLI-Tool",
         "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
       ],
-      "startDate": "2018-07",
+      "startDate": "07/2018",
       "endDate": "heute"
     },
     {
@@ -58,16 +58,16 @@
         "Abschätzen der Parität von Browser-basiertem-Canvas- und server-seitigem PDF-Rendering durch Erstellen eines Prototyps in Vue.js und Laravel",
         "Anschließende Umsetzung einer Canvas-bassierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
       ],
-      "startDate": "2018-01",
-      "endDate": "2018-06"
+      "startDate": "01/2018",
+      "endDate": "06/2018"
     },
     {
       "position": "Praktikant und Werkstudent Webenwicklung",
       "company": "coma AG",
       "website": "https://coma.de",
       "highlights": [],
-      "startDate": "2016-05",
-      "endDate": "2017-10"
+      "startDate": "05/2016",
+      "endDate": "10/2017"
     }
   ],
   "skills": [
