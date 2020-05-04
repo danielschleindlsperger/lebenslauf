@@ -56,15 +56,16 @@
       "highlights": [
         "Umsetzung einer Upselling-Lösung im Checkout",
         "Abschätzen der Parität von Browser-basiertem-Canvas- und server-seitigem PDF-Rendering durch Erstellen eines Prototyps in Vue.js und Laravel",
-        "Anschließende Umsetzung einer Canvas-bassierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js",
+        "Anschließende Umsetzung einer Canvas-bassierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
       ],
       "startDate": "2018-01",
       "endDate": "2018-06"
     },
     {
-      "highlights": [],
       "position": "Praktikant und Werkstudent Webenwicklung",
       "company": "coma AG",
+      "website": "https://coma.de",
+      "highlights": [],
       "startDate": "2016-05",
       "endDate": "2017-10"
     }
@@ -85,7 +86,8 @@
         "UIs mit React und Vue.js",
         "Serverless Technologien (AWS)",
         "Laravel und PHP",
-        "Funktionales Programmieren in TypeScript, Scala und Clojure"
+        "FunktionalesProgrammierung in TypeScript, Scala und Clojure",
+        "Continuous Integration"
       ]
     }
   ],
@@ -101,7 +103,7 @@
       "keywords": ["React ", "AWS Cloudformation", "AWS S3", "AWS Cognito"],
       "name": "Münchner Fenster Admin",
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
-      "description": "Die interne Applikation erlaubt es Redakteuren Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen zu pflegen. Der auf Cloudfront, S3 und Cognito basierende Stack ohne eigenem Code im Backend erlaubt es die Anwendung über Jahre hinweg sicher und kostengünstig ohne viel Wartungsaufwand zu betreiben."
+     "description": "Die interne Applikation erlaubt es Redakteuren Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen zu pflegen. Der serverless Stack ohne eigenem Code im Backend erlaubt es die Anwendung über Jahre hinweg sicher und kostengünstig ohne viel Wartungsaufwand zu betreiben."
     }
   ],
   "awards": [],

@@ -32,7 +32,7 @@ export const App = () => {
           <ul>
             {resume.education.map((edu) => (
               <li key={edu.institution}>
-                <div className="flex space-between">
+                <div className="flex space-between items-baseline justify-between">
                   <div>
                     <p className="font-bold">
                       {edu.studyType} {edu.area}
@@ -82,7 +82,7 @@ type TimestampProps = {
 }
 const Timestamp = ({ startDate, endDate, className }: TimestampProps) => {
   return (
-    <div className={cx(className, 'font-semibold text-gray-700')}>
+    <div className={cx(className, 'font-semibold text-gray-700 text-sm')}>
       <time dateTime={startDate}>{startDate}</time> - <time dateTime={endDate}>{endDate}</time>
     </div>
   )
