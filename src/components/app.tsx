@@ -14,6 +14,10 @@ export const App = () => {
       <Page>
         <Basics />
 
+        <Section title="Zusammenfassung">
+          <p>{resume.basics.summary}</p>
+        </Section>
+
         <Section title="Berufliche Erfahrung">
           <ul>
             {resume.work.map((w) => (
