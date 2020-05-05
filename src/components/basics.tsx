@@ -41,7 +41,7 @@ export const Basics = () => {
             <Profiles />
           </address>
         </div>
-        <Avatar className="w-56" />
+        <Avatar className="w-48" />
       </div>
     </div>
   )
