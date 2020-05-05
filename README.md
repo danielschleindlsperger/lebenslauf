@@ -16,6 +16,6 @@ npm ci
 # Serve a preview in the browser
 npm start
 
-# Export as PDF
+# Export as PDF to out/
 npm run export
 ```
