@@ -91,12 +91,10 @@
     {
       "name": "Technologien",
       "keywords": [
-        "Testing",
-        "UIs mit React und Vue.js",
+        "Automatisiertes Testing und Continuous Integration / Deployment",
+        "Data-driven UIs mit React und Vue.js",
         "Serverless Technologien (AWS)",
-        "Laravel und PHP",
-        "Funktionale Programmierung in TypeScript, Scala und Clojure",
-        "Continuous Integration"
+        "Funktionale Programmierung in TypeScript, Scala und Clojure"
       ]
     }
   ],

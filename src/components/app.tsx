@@ -31,7 +31,9 @@ export const App = () => {
             ))}
           </ul>
         </Section>
+      </Page>
 
+      <Page>
         <Section title="Ausbildung">
           <ul>
             {resume.education.map((edu) => (
@@ -49,9 +51,7 @@ export const App = () => {
             ))}
           </ul>
         </Section>
-      </Page>
 
-      <Page>
         <Section title="Projekte">
           <ul>
             {resume.projects.map((proj) => (
