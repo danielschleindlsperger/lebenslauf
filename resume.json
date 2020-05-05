@@ -30,9 +30,17 @@
       "institution": "Technische Hochschule Deggendorf",
       "location": "Deggendorf",
       "studyType": "BE",
-      "endDate": "2017",
       "startDate": "2013",
+      "endDate": "2017",
       "area": "Medientechnik mit Schwerpunkt Medieninformatik"
+    },
+    {
+      "institution": "Gymnasium Pfarrkirchen",
+      "location": "Pfarrkirchen",
+      "studyType": "Allgemeine Hochschulreife",
+      "startDate": "2004",
+      "endDate": "2012",
+      "area": ""
     }
   ],
   "work": [
@@ -42,7 +50,7 @@
       "website": "https://www.sz.de",
       "highlights": [
         "Mitverantwortlich für die Seite SZ.de mit mehreren Millionen Visits pro Tag",
-        "Wichtige Rolle beim Relaunch des Artikels auf SZ.de",
+        "Rolle beim Relaunch des Artikels auf SZ.de als server-rendered React Applikation",
         "Verbesserte Integration der verteilten Kubernetes Microservices-Architektur in die lokale Entwicklungsumgebung durch internes CLI-Tool",
         "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
       ],
@@ -55,8 +63,8 @@
       "website": "https://myposter.de",
       "highlights": [
         "Umsetzung einer Upselling-Lösung im Checkout",
-        "Abschätzen der Parität von Browser-basiertem-Canvas- und server-seitigem PDF-Rendering durch Erstellen eines Prototyps in Vue.js und Laravel",
-        "Anschließende Umsetzung einer Canvas-bassierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
+        "Abschätzen der Parität zwischen browser-basiertem canvas- und server-seitigem PDF-Rendering durch Prototypen in Vue.js und Laravel",
+        "Anschließende Umsetzung des Frontends der canvas-basierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
       ],
       "startDate": "01/2018",
       "endDate": "06/2018"
@@ -76,7 +84,8 @@
       "keywords": [
         "Verständnis für alle Bereiche des Applikations-Stacks",
         "Scharfblick und schnelle Auffassungsgabe",
-        "Hoher Wissensdurst"
+        "Hoher Wissensdurst",
+        "Agilität und Nutzerfokus"
       ]
     },
     {
@@ -93,17 +102,17 @@
   ],
   "projects": [
     {
-      "name": " Autorenseiten",
+      "name": "Autorenseiten",
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
       "keywords": ["React", "AWS Lambda", "AWS Cloudformation", "AWS DynamoDB"],
-      "description": "Entstanden aus meiner Idee und prototypischen Umsetzung bei einem firmen-internen Hackathon setzt das Team eine eigenständige Seite als Spotlight für die Autoren der Süddeutschen Zeitung um.  Für den eigenständigen Microservice gilt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als SSR-Applikation mit React gelingt eine Platzierung der meisten Autoren in den Top-Ergebnissen der Suchmaschinen sowie eine gute Nutzererfahrung durch schnelles Laden.  Für die Übersichtsseite aller Autoren wird eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant dargestellt. Das Resultat zahlt ebenfalls auf eine erhöhte Auffindbarkeit bei Suchmaschinen und eine bessere UX ein.",
+      "description": "Als Spotlight für die Autoren der Süddeutschen Zeitung wurde ein eigenständiger Microservice konzipiert. Für das Projekt galt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als server-seitig gerenderte Applikation mit React erreichen die Seiten der meisten Autoren eine Platzierung in den Top-Ergebnissen der Suchmaschinen. Die hohe Performance zahlt außerdem auf die Nutzererfahrung ein. Für die Übersichtsseite aller Autoren gelang es eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant darzustellen.",
       "url": "https://www.sz.de/autoren"
     },
     {
       "keywords": ["React ", "AWS Cloudformation", "AWS S3", "AWS Cognito"],
       "name": "Münchner Fenster Admin",
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
-     "description": "Die interne Applikation erlaubt es Redakteuren Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen zu pflegen. Der serverless Stack ohne eigenem Code im Backend erlaubt es die Anwendung über Jahre hinweg sicher und kostengünstig ohne viel Wartungsaufwand zu betreiben."
+      "description": "Die interne Applikation ermöglichst es Redakteuren die Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen effizient zu pflegen. Der serverless Stack ohne eigenem Code im Backend erlaubt sicheren und kostengünstigen den Betrieb der Anwendung ohne großen Wartungsaufwand über Jahre hinweg."
     }
   ],
   "awards": [],

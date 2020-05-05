@@ -31,7 +31,7 @@ export const App = () => {
         <Section title="Ausbildung">
           <ul>
             {resume.education.map((edu) => (
-              <li key={edu.institution}>
+              <li className="mt-4" key={edu.institution}>
                 <div className="flex space-between items-baseline justify-between">
                   <div>
                     <p className="font-bold">
