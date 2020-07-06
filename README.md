@@ -1,11 +1,10 @@
 # Lebenslauf (CV)
 
-React based CV, styled with tailwind.
+React based CV, styled with tailwind. The resume is data driven using `resume.json` inspired by [JSON Resume](https://jsonresume.org/).
 
 ## Requirements
 
 - Node >= 12 with npm
-
 
 ## Getting Started
 
