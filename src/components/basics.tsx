@@ -53,12 +53,12 @@ const Profiles = () => {
   return (
     <>
       {resume.profiles.map((p) => (
-        <>
-          <RowTitle key={p.name}>{p.name}</RowTitle>
-          <a key={p.url} className="col-span-5" href={p.url}>
+        <React.Fragment key={p.name}>
+          <RowTitle>{p.name}</RowTitle>
+          <a className="col-span-5" href={p.url}>
             {formatUrl(p.url)}
           </a>
-        </>
+        </React.Fragment>
       ))}
     </>
   )
