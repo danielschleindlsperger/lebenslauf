@@ -4,7 +4,6 @@
   "description": "CV of this guy",
   "main": "index.js",
   "scripts": {
-    "resume": "resume",
     "start": "parcel src/index.html",
     "export": "ts-node src/render-to-pdf.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/danielschleindlsperger/lebenslauf.git"
   },
-  "keywords": ["lebenslauf", "cv", "curriculum vitae"],
+  "keywords": [
+    "lebenslauf",
+    "cv",
+    "curriculum vitae"
+  ],
   "author": "Daniel Schleindlsperger",
   "license": "ISC",
   "bugs": {
@@ -25,7 +28,6 @@
     "@types/puppeteer": "^2.0.1",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
-    "resume-cli": "^1.2.7",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   },
