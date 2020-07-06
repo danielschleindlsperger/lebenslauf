@@ -45,6 +45,12 @@
   ],
   "work": [
     {
+      "company": "Selbstständig",
+      "highlights": [],
+      "startDate": "05/2020",
+      "endDate": "Heute"
+    },
+    {
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
       "position": "Software-Entwickler",
       "website": "https://www.sz.de",
@@ -55,7 +61,7 @@
         "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
       ],
       "startDate": "07/2018",
-      "endDate": "heute"
+      "endDate": "05/2020"
     },
     {
       "company": "myposter GmbH",
