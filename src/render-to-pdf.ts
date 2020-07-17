@@ -27,6 +27,8 @@ async function main() {
     printBackground: true,
   })
 
+  console.log('\nSuccessfully exported Lebenslauf to PDF!\n')
+
   await browser.close()
   await closeServer()
 }
