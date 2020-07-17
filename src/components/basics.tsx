@@ -14,7 +14,7 @@ export const Basics = () => {
       <div className="flex justify-between">
         <div>
           <h1 className={typo.h1}>{resume.basics.name}</h1>
-          <h2 className={cx('text-xl text-gray-700 font-bold')}>Softwareentwickler</h2>
+          <h2 className={cx('text-xl text-gray-700 font-bold')}>Software-Entwickler</h2>
 
           <address className="mt-6 mr-6 grid grid-cols-8 not-italic">
             <RowTitle>Adresse</RowTitle>
