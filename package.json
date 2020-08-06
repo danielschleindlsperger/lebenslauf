@@ -26,7 +26,6 @@
   "homepage": "https://github.com/danielschleindlsperger/lebenslauf#readme",
   "devDependencies": {
     "@types/classnames": "^2.2.10",
-    "@types/lodash": "^4.14.159",
     "@types/puppeteer": "^2.1.1",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
@@ -37,7 +36,6 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "get-port": "^5.1.1",
-    "lodash": "^4.17.19",
     "parcel-bundler": "^1.12.4",
     "puppeteer": "^3.3.0",
     "react": "^16.13.1",

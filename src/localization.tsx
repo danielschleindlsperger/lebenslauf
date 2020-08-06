@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { get } from 'lodash'
 import cx from 'classnames'
 
 export type Locale = 'de' | 'en'
