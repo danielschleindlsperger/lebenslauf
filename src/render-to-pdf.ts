@@ -4,6 +4,7 @@ import { createServer } from 'http'
 import puppeteer from 'puppeteer'
 import handler from 'serve-handler'
 import getPort from 'get-port'
+import { availableLocales } from './localization'
 
 const OUTPUT_DIR = path.resolve(__dirname, '../out')
 const OUTPUT = path.resolve(OUTPUT_DIR, 'lebenslauf-daniel-schleindlsperger.pdf')
@@ -18,14 +19,21 @@ async function main() {
   const port = await getPort({ port: getPort.makeRange(3000, 3100) })
   const closeServer = await serve({ port })
 
-  await page.goto(`http://localhost:${port}`, {
-    waitUntil: 'networkidle0',
-  })
-  await page.pdf({
-    path: OUTPUT,
-    format: 'A4',
-    printBackground: true,
-  })
+  for (const locale of availableLocales) {
+    const filename = path.resolve(OUTPUT_DIR, `lebenslauf-daniel-schleindlsperger-${locale}.pdf`)
+
+    await page.goto(`http://localhost:${port}?locale=${locale}`, {
+      waitUntil: 'networkidle0',
+    })
+
+    await page.pdf({
+      path: filename,
+      format: 'A4',
+      printBackground: true,
+    })
+
+    console.log(`Exported ${locale.toUpperCase()} locale.`)
+  }
 
   console.log('\nSuccessfully exported Lebenslauf to PDF!\n')
 

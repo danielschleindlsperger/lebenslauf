@@ -4,29 +4,37 @@
 
 @tailwind utilities;
 
-html, body {
-    /* https://github.com/puppeteer/puppeteer/issues/2685 */
-    -webkit-print-color-adjust: exact;
+html,
+body {
+  /* https://github.com/puppeteer/puppeteer/issues/2685 */
+  -webkit-print-color-adjust: exact;
 
-    font-size: 14px;
-    background-color: white;
+  font-size: 14px;
+  background-color: white;
 }
 
 .page {
-    width: 210mm;
-    height: 297mm;
-    padding: 2cm 2cm 2cm 2.5cm;
-    overflow: hidden;
-    page-break-after: always;
-    background-color: white;
+  width: 210mm;
+  height: 297mm;
+  padding: 2cm 2cm 2cm 2.5cm;
+  overflow: hidden;
+  page-break-after: always;
+  background-color: white;
+}
+
+@media print {
+  .hide-for-print {
+    display: none;
+  }
 }
 
 @media not print {
-    html, body {
-        background-color: #f2f2f2;
-    }
-    .page {
-        margin: 50px auto 50px auto;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    }
+  html,
+  body {
+    background-color: #f2f2f2;
+  }
+  .page {
+    margin: 50px auto 50px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
 }

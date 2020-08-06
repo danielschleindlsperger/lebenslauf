@@ -6,16 +6,19 @@ import { Section } from './typo'
 import { formatUrl } from '../util'
 
 import '../styles.css'
+import { useLocalization, LocaleSwitcher } from '../localization'
 
 export const App = () => {
   const resume = useResume()
+  const { __ } = useLocalization()
   return (
     <>
+      <LocaleSwitcher className="hide-for-print" />
       <Page>
         <Basics />
 
         <Section title="Zusammenfassung">
-          <p>{resume.basics.summary}</p>
+          <p>{__(resume, 'basics.summary')}</p>
         </Section>
 
         <Section title="Berufliche Erfahrung">

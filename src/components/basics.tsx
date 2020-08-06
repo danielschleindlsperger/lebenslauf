@@ -4,9 +4,11 @@ import { useResume } from '../resume'
 import { typo, Section } from './typo'
 import { formatUrl } from '../util'
 import avatarUrl from '../Portrait_1000.jpg'
+import { useLocalization } from '../localization'
 
 export const Basics = () => {
   const resume = useResume()
+  const { __ } = useLocalization()
 
   return (
     <div className="relative">

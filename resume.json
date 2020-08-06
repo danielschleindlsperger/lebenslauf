@@ -1,8 +1,8 @@
 {
   "headings": {
-    "skills": "Besondere Fähigkeiten",
+    "skills": { "de": "Besondere Fähigkeiten", "en": "Special skills" },
     "awards": "",
-    "education": "Ausbildung",
+    "education": { "de": "Ausbildung", "en": "Education" },
     "work": "Berufliche Erfahrung",
     "projects": "Projekte"
   },
@@ -13,7 +13,10 @@
     "email": "daniel@schleindlsperger.de",
     "phone": "+49 152 56 11 57 86",
     "website": "https://daniel.schleindlsperger.de",
-    "summary": "Als Fullstack-Software-Entwickler mit mehr als zwei Jahren Erfahrung im Konzipieren und Umsetzen von millionenfach besuchten und performance-kritischen Webseiten in agilen Teams bin ich auf der Suche nach einer dynamischen Umgebung, in welcher der Nutzer stets im Fokus steht."
+    "summary": {
+      "de": "Als Fullstack-Software-Entwickler mit mehr als zwei Jahren Erfahrung im Konzipieren und Umsetzen von millionenfach besuchten und performance-kritischen Webseiten in agilen Teams bin ich auf der Suche nach einer dynamischen Umgebung, in welcher der Nutzer stets im Fokus steht.",
+      "en": "FOOFOFOJjkj"
+    }
   },
   "profiles": [
     {
