@@ -15,7 +15,7 @@
     "website": "https://daniel.schleindlsperger.de",
     "summary": {
       "de": "Als Fullstack-Software-Entwickler mit mehr als zwei Jahren Erfahrung im Konzipieren und Umsetzen von millionenfach besuchten und performance-kritischen Webseiten in agilen Teams bin ich auf der Suche nach einer dynamischen Umgebung, in welcher der Nutzer stets im Fokus steht.",
-      "en": "FOOFOFOJjkj"
+      "en": "As a full-stack software developer with more than two years of experience in developing high traffic and performance-critical websites in agile teams, I am looking for a dynamic environment with a strong user focus."
     }
   },
   "profiles": [
@@ -30,12 +30,18 @@
   ],
   "education": [
     {
-      "institution": "Technische Hochschule Deggendorf",
+      "institution": {
+        "de": "Technische Hochschule Deggendorf",
+        "en": "Deggendorf Institute of Technology"
+      },
       "location": "Deggendorf",
       "studyType": "BE",
       "startDate": "2013",
       "endDate": "2017",
-      "area": "Medientechnik mit Schwerpunkt Medieninformatik"
+      "area": {
+        "de": "Medientechnik mit Schwerpunkt Medieninformatik",
+        "en": "Media Technology with Major in Media Informatics"
+      }
     },
     {
       "institution": "Gymnasium Pfarrkirchen",
@@ -48,21 +54,29 @@
   ],
   "work": [
     {
-      "company": "Selbstständig",
+      "company": { "de": "Selbstständig", "en": "Self-employed" },
       "highlights": [],
       "startDate": "06/2020",
-      "endDate": "Heute"
+      "endDate": { "de": "Heute", "en": "Now" }
     },
     {
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
-      "position": "Software-Entwickler",
+      "position": { "de": "Software-Entwickler", "en": "Software Developer" },
       "website": "https://www.sz.de",
-      "highlights": [
-        "Mitverantwortlich für die Seite SZ.de mit mehreren Millionen Visits pro Tag",
-        "Rolle beim Relaunch des Artikels auf SZ.de als server-rendered React Applikation",
-        "Verbesserte Integration der verteilten Kubernetes Microservices-Architektur in die lokale Entwicklungsumgebung durch internes CLI-Tool",
-        "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
-      ],
+      "highlights": {
+        "de": [
+          "Mitverantwortlich für die Seite SZ.de mit mehreren Millionen Visits pro Tag",
+          "Rolle beim Relaunch des Artikels auf SZ.de als server-rendered React Applikation",
+          "Verbesserte Integration der verteilten Kubernetes Microservices-Architektur in die lokale Entwicklungsumgebung durch internes CLI-Tool",
+          "Einführung von Features-Toggles und AB-Testing zur Steigerung der Agilität durch kontinuierliche Integration neuer Features in die Produktionsumgebung"
+        ],
+        "en": [
+          "Co-responsible for SZ.de with several million page visits per day",
+          "Role in the relaunch of the SZ web article as a server-render React application",
+          "Improved integration of the distributed Kubernetes-based microservices-architecture into local development environments employing an internal CLI tool",
+          "Introduction of feature toggles and A/B testing to increase agility through continuous integration of new feature into the production environment"
+        ]
+      },
       "startDate": "07/2018",
       "endDate": "05/2020"
     },
@@ -70,16 +84,26 @@
       "company": "myposter GmbH",
       "position": "Webentwickler",
       "website": "https://myposter.de",
-      "highlights": [
-        "Umsetzung einer Upselling-Lösung im Checkout",
-        "Abschätzen der Parität zwischen browser-basiertem canvas- und server-seitigem PDF-Rendering durch Prototypen in Vue.js und Laravel",
-        "Anschließende Umsetzung des Frontends der canvas-basierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
-      ],
+      "highlights": {
+        "de": [
+          "Umsetzung einer Upselling-Lösung im Checkout",
+          "Abschätzen der Parität zwischen browser-basiertem canvas- und server-seitigem PDF-Rendering durch Prototypen in Vue.js und Laravel",
+          "Anschließende Umsetzung des Frontends der canvas-basierten Web-Applikation zur Erstellung von Fotobüchern in Vue.js"
+        ],
+        "en": [
+          "Realization of an upselling solution in the checkout process",
+          "Parity-assessment between a browser-based canvas- and server-side PDF-rendering utilizing a prototype in Vue.js and Laravel",
+          "Subsequent frontend implementation in Vue.js of the canvas-based web application for creating photo books"
+        ]
+      },
       "startDate": "01/2018",
       "endDate": "06/2018"
     },
     {
-      "position": "Praktikant und Werkstudent Webentwicklung",
+      "position": {
+        "de": "Praktikant und Werkstudent Webentwicklung",
+        "en": "Intern and working student for web development tasks"
+      },
       "company": "coma AG",
       "website": "https://coma.de",
       "highlights": [],
@@ -90,38 +114,71 @@
   "skills": [
     {
       "name": "Soft Skills",
-      "keywords": [
-        "Verständnis für alle Bereiche des Applikations-Stacks",
-        "Scharfblick und schnelle Auffassungsgabe",
-        "Hoher Wissensdurst",
-        "Agilität und Nutzerfokus"
-      ]
+      "keywords": {
+        "de": [
+          "Verständnis für alle Bereiche des Applikations-Stacks",
+          "Scharfblick und schnelle Auffassungsgabe",
+          "Hoher Wissensdurst",
+          "Agilität und Nutzerfokus"
+        ],
+        "en": [
+          "Understanding for all areas of the application stack",
+          "A sharp eye and quick-wittedness",
+          "High curiosity",
+          "Agility and user focus"
+        ]
+      }
     },
     {
-      "name": "Technologien",
-      "keywords": [
-        "Automatisiertes Testing und Continuous Integration / Deployment",
-        "Data-driven UIs mit React und Vue.js",
-        "Serverless Technologien (AWS)",
-        "Funktionale Programmierung in TypeScript, Scala und Clojure"
-      ]
+      "name": { "de": "Technologien", "en": "Technologies" },
+      "keywords": {
+        "de": [
+          "Automatisiertes Testing, Continuous Integration und Deployment",
+          "Data-driven UIs mit React und Vue.js",
+          "Serverless Technologien (AWS)",
+          "Funktionale Programmierung in TypeScript, Scala und Clojure"
+        ],
+        "en": [
+          "Automated testing, continuous integration and deployment",
+          "Data-driven UIs with React and Vue.js",
+          "Serverless technologies (AWS)",
+          "Functional programming in TypeScript, Scala, and Clojure"
+        ]
+      }
     }
   ],
   "projects": [
     {
-      "name": "Autorenseiten",
+      "name": { "de": "Autorenseiten", "en": "Author Pages" },
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
       "keywords": ["React", "AWS Lambda", "AWS Cloudformation", "AWS DynamoDB"],
-      "description": "Als Spotlight für die Autoren der Süddeutschen Zeitung wurde ein eigenständiger Microservice konzipiert. Für das Projekt galt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als server-seitig gerenderte Applikation mit React erreichen die Seiten der meisten Autoren eine Platzierung in den Top-Ergebnissen der Suchmaschinen. Die hohe Performance zahlt außerdem auf die Nutzererfahrung ein. Für die Übersichtsseite aller Autoren gelang es eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant darzustellen.",
+      "description": {
+        "de": "Als Spotlight für die Autoren der Süddeutschen Zeitung wurde ein eigenständiger Microservice konzipiert. Für das Projekt galt es zunächst die Profile aller Autoren auszuwerten und veraltete Daten zu updaten. Durch Umsetzung als server-seitig gerenderte Applikation mit React erreichen die Seiten der meisten Autoren eine Platzierung in den Top-Ergebnissen der Suchmaschinen. Die hohe Performance zahlt außerdem auf die Nutzererfahrung ein. Für die Übersichtsseite aller Autoren gelang es eine 700 Einträge lange Liste von Autoren ohne Virtualisierung in einer React App performant darzustellen.",
+        "en": "As a spotlight for the authors of Süddeutsche Zeitung an independent micro-service was conceived. Initially, the profiles of all authors had to be examined and their data straightened. Through the implementation as a server-rendered application in React the application reaches a top placement in search engines for most authors and provides great user experience. For the overview page over 700 author profiles are rendered performantly in a list without virtualization."
+      },
       "url": "https://www.sz.de/autoren"
     },
     {
       "keywords": ["React ", "AWS Cloudformation", "AWS S3", "AWS Cognito"],
       "name": "Münchner Fenster Admin",
       "company": "Süddeutsche Zeitung Digitale Medien GmbH",
-      "description": "Die interne Applikation ermöglichst es Redakteuren die Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen effizient zu pflegen. Der serverless Stack ohne eigenem Code im Backend erlaubt sicheren und kostengünstigen den Betrieb der Anwendung ohne großen Wartungsaufwand über Jahre hinweg."
+      "description": {
+        "de": "Die interne Applikation ermöglichst es Redakteuren die Inhalte für das Fahrgast-TV in den Münchner U- und S-Bahnen effizient zu pflegen. Der serverless Stack ohne eigenem Code im Backend erlaubt sicheren und kostengünstigen den Betrieb der Anwendung ohne großen Wartungsaufwand über Jahre hinweg.",
+        "en": "The internal application enables editors to update content for passenger info screens in Munichs U- and S-Bahnen efficiently. The serverless stack without custom code in the backend enables secure and cost-efficient operation of the application without much maintenance burden."
+      }
     }
   ],
   "awards": [],
-  "sections": ["templates", "profile", "education", "work", "skills", "projects", "awards"]
+  "sections": ["templates", "profile", "education", "work", "skills", "projects", "awards"],
+  "translations": {
+    "SOFTWARE_DEVELOPER": { "de": "Software-Entwickler", "en": "Software Developer" },
+    "ADDRESS": { "de": "Adresse", "en": "Address" },
+    "BIRTHDAY": { "de": "Geburtstag", "en": "Birthday" },
+    "PHONE": { "de": "Telefon", "en": "Phone" },
+    "SUMMARY": { "de": "Zusammenfassung", "en": "Summary" },
+    "PROFESSIONAL_EXPERIENCE": { "de": "Berufliche Erfahrung", "en": "Professional Experience" },
+    "EDUCATION": { "de": "Ausbildung", "en": "Education" },
+    "PROJECTS": { "de": "Projekte", "en": "Projects" },
+    "NOTABLE_SKILLS": { "de": "Besondere Fähigkeiten", "en": "Notable Skills" }
+  }
 }

@@ -17,19 +17,19 @@ export const App = () => {
       <Page>
         <Basics />
 
-        <Section title="Zusammenfassung">
-          <p>{__(resume, 'basics.summary')}</p>
+        <Section title={__(resume.translations.SUMMARY)}>
+          <p>{__(resume.basics.summary)}</p>
         </Section>
 
-        <Section title="Berufliche Erfahrung">
+        <Section title={__(resume.translations.PROFESSIONAL_EXPERIENCE)}>
           <ul>
             {resume.work.map((w) => (
-              <li className="mt-6" key={w.company}>
+              <li className="mt-6" key={__(w.company)}>
                 <div className="flex items-baseline justify-between">
-                  <SubHeading title={w.company} url={w.website} overline={w.position} />
-                  <Timestamp startDate={w.startDate} endDate={w.endDate} />
+                  <SubHeading title={__(w.company)} url={__(w.website)} overline={__(w.position)} />
+                  <Timestamp startDate={__(w.startDate)} endDate={__(w.endDate)} />
                 </div>
-                <BulletList className="mt-4" entries={w.highlights} />
+                <BulletList className="mt-4" entries={__(w.highlights)} />
               </li>
             ))}
           </ul>
@@ -37,42 +37,46 @@ export const App = () => {
       </Page>
 
       <Page>
-        <Section title="Ausbildung">
+        <Section title={__(resume.translations.EDUCATION)}>
           <ul>
             {resume.education.map((edu) => (
-              <li className="mt-4" key={edu.institution}>
+              <li className="mt-4" key={__(edu.institution)}>
                 <div className="flex space-between items-baseline justify-between">
                   <div>
                     <p className="font-bold">
-                      {edu.studyType} {edu.area}
+                      {__(edu.studyType)} {__(edu.area)}
                     </p>
-                    <p className="text-gray-700 font-semibold">{edu.institution}</p>
+                    <p className="text-gray-700 font-semibold">{__(edu.institution)}</p>
                   </div>
-                  <Timestamp className="ml-4" startDate={edu.startDate} endDate={edu.endDate} />
+                  <Timestamp
+                    className="ml-4"
+                    startDate={__(edu.startDate)}
+                    endDate={__(edu.endDate)}
+                  />
                 </div>
               </li>
             ))}
           </ul>
         </Section>
 
-        <Section title="Projekte">
+        <Section title={__(resume.translations.PROJECTS)}>
           <ul>
             {resume.projects.map((proj) => (
-              <li className="mt-6" key={proj.name}>
-                <SubHeading title={proj.name} url={proj.url} overline={proj.company} />
-                <p className="mt-3">{proj.description}</p>
-                <Taglist className="mt-3" tags={proj.keywords} />
+              <li className="mt-6" key={__(proj.name)}>
+                <SubHeading title={__(proj.name)} url={__(proj.url)} overline={__(proj.company)} />
+                <p className="mt-3">{__(proj.description)}</p>
+                <Taglist className="mt-3" tags={__(proj.keywords)} />
               </li>
             ))}
           </ul>
         </Section>
 
-        <Section title="Besondere Fähigkeiten">
+        <Section title={__(resume.translations.NOTABLE_SKILLS)}>
           <ul>
             {resume.skills.map((skill) => (
-              <li className="mt-2" key={skill.name}>
-                <h3 className="text-lg font-bold">{skill.name}</h3>
-                <BulletList className="mt-2" entries={skill.keywords} />
+              <li className="mt-2" key={__(skill.name)}>
+                <h3 className="text-lg font-bold">{__(skill.name)}</h3>
+                <BulletList className="mt-2" entries={__(skill.keywords)} />
               </li>
             ))}
           </ul>

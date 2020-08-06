@@ -24,17 +24,36 @@ export const LocalizationProvider = ({
   )
 }
 
+type Localizable = Record<Locale, any>
+
 export const useLocalization = () => {
   const { activeLocale } = React.useContext(LocalizationContext)
-  return {
-    __: (what: object, path: string) => {
-      const value = get(what, `${path}.${activeLocale}`)
-      if (!value) {
-        throw new Error(`Could not find localization value in path '${path}'.`)
-      }
-      return value
-    },
+  /**
+   * @example
+   * const nested = {object: {translation: {en: "foo", de: "bar"}}}
+   * __(nested.object.translation)
+   */
+  const __ = (translationObject: Localizable | any[] | string | undefined) => {
+    if (
+      !translationObject ||
+      typeof translationObject === 'string' ||
+      Array.isArray(translationObject)
+    )
+      return translationObject
+    const value = translationObject[activeLocale]
+    if (!value) {
+      throw new Error(
+        `Could not find localization value in Object '${JSON.stringify(
+          translationObject,
+          null,
+          2,
+        )}'.`,
+      )
+    }
+    return value
   }
+
+  return { __ }
 }
 
 export const LocaleSwitcher = ({ className }: { className?: string }) => {
